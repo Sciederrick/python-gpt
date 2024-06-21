@@ -8,5 +8,10 @@ export default defineNuxtConfig({
             autoprefixer: {},
         },
     },
-    modules: ['nuxt-icon']
+    modules: ['nuxt-icon'],
+    runtimeConfig: {
+        privateRuntimeConfig: {
+            apiKey: process.env.API_KEY
+        }
+    }
 });

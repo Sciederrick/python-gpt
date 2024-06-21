@@ -1,0 +1,104 @@
+{
+    "options": {
+        "method": "get",
+        "path": "/threads/thread_cx9TdhseM42p380O5WtGtTcu/messages",
+        "query": {},
+        "headers": {
+            "OpenAI-Beta": "assistants=v2"
+        }
+    },
+    "response": {
+        "size": 0,
+        "timeout": 0
+    },
+    "body": {
+        "object": "list",
+        "data": [
+            {
+                "id": "msg_4Zo0sulDAMmjRHEPdm3P4u9A",
+                "object": "thread.message",
+                "created_at": 1718879963,
+                "assistant_id": "asst_UbjFmsqvYBbkrHYaxd1I4xcN",
+                "thread_id": "thread_cx9TdhseM42p380O5WtGtTcu",
+                "run_id": "run_QRphavq2DUV9AoHCG8VoqZYP",
+                "role": "assistant",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": {
+                            "value": "Python is a high-level, versatile, and interpreted programming language known for its simplicity and readability. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python code is typically clear and concise, making it easy to learn and use for beginners while also being powerful enough for complex applications. Python's extensive standard library offers support for various tasks like web development, data analysis, artificial intelligence, scientific computing, and more. Additionally, Python's active community and large number of libraries make it a popular choice for software development across various domains.",
+                            "annotations": []
+                        }
+                    }
+                ],
+                "attachments": [],
+                "metadata": {}
+            },
+            {
+                "id": "msg_cVL05yQvbGJEfUhIXZQG7xEj",
+                "object": "thread.message",
+                "created_at": 1718879960,
+                "assistant_id": null,
+                "thread_id": "thread_cx9TdhseM42p380O5WtGtTcu",
+                "run_id": null,
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": {
+                            "value": "What is Python?",
+                            "annotations": []
+                        }
+                    }
+                ],
+                "attachments": [],
+                "metadata": {}
+            }
+        ],
+        "first_id": "msg_4Zo0sulDAMmjRHEPdm3P4u9A",
+        "last_id": "msg_cVL05yQvbGJEfUhIXZQG7xEj",
+        "has_more": false
+    },
+    "data": [
+        {
+            "id": "msg_4Zo0sulDAMmjRHEPdm3P4u9A",
+            "object": "thread.message",
+            "created_at": 1718879963,
+            "assistant_id": "asst_UbjFmsqvYBbkrHYaxd1I4xcN",
+            "thread_id": "thread_cx9TdhseM42p380O5WtGtTcu",
+            "run_id": "run_QRphavq2DUV9AoHCG8VoqZYP",
+            "role": "assistant",
+            "content": [
+                {
+                    "type": "text",
+                    "text": {
+                        "value": "Python is a high-level, versatile, and interpreted programming language known for its simplicity and readability. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python code is typically clear and concise, making it easy to learn and use for beginners while also being powerful enough for complex applications. Python's extensive standard library offers support for various tasks like web development, data analysis, artificial intelligence, scientific computing, and more. Additionally, Python's active community and large number of libraries make it a popular choice for software development across various domains.",
+                        "annotations": []
+                    }
+                }
+            ],
+            "attachments": [],
+            "metadata": {}
+        },
+        {
+            "id": "msg_cVL05yQvbGJEfUhIXZQG7xEj",
+            "object": "thread.message",
+            "created_at": 1718879960,
+            "assistant_id": null,
+            "thread_id": "thread_cx9TdhseM42p380O5WtGtTcu",
+            "run_id": null,
+            "role": "user",
+            "content": [
+                {
+                    "type": "text",
+                    "text": {
+                        "value": "What is Python?",
+                        "annotations": []
+                    }
+                }
+            ],
+            "attachments": [],
+            "metadata": {}
+        }
+    ]
+}

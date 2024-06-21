@@ -12,19 +12,19 @@ export default {
         extend: {
             colors: {
                 primary: {
-                    light: "#4285F4", // Lighter blue, similar to Twitter's primary
-                    DEFAULT: "#007BFF", // Standard blue, similar to Bootstrap's primary
-                    dark: "#005CBE", // Darker blue
+                    light: "#4285F4",
+                    DEFAULT: "#007BFF",
+                    dark: "#005CBE",
                 },
                 secondary: {
-                    light: "#F8F9FA", // Light gray for backgrounds
-                    DEFAULT: "#868E96", // Medium gray for text
-                    dark: "#343A40", // Dark gray for accents
+                    light: "#F8F9FA",
+                    DEFAULT: "#868E96",
+                    dark: "#343A40",
                 },
                 accent: {
-                    light: "#F9F7F6", // Very light gray for highlights
-                    DEFAULT: "#FFC107", // Orange for emphasis
-                    dark: "#E0A800", // Darker orange
+                    light: "#FFF3CD",
+                    DEFAULT: "#FFC107",
+                    dark: "#E0A800",
                 },
             },
         },
