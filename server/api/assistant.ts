@@ -28,11 +28,6 @@ export default defineEventHandler(async (event) => {
             const messages = await openai.beta.threads.messages.list(
                 run.thread_id
             );
-            console.log("🚀 ~ defineEventHandler ~ messages:", messages)
-            // for (const message of messages.data.reverse()) {
-            //     console.log(`${message.role} > ${message.content[0]}`);
-            //     return { success: true, resp: message, status: "completed" };
-            // }
             return { success: true, resp: messages, status: "completed" };
         } else {
             console.log(run.status);
