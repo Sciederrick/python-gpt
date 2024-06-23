@@ -40,5 +40,5 @@ export type UiMessage = {
     msg: {
         type: MsgType,
         value: string
-    }
+    },
 }

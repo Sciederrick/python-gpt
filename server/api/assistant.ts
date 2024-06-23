@@ -9,10 +9,9 @@ export default defineEventHandler(async (event) => {
             apiKey,
         });
 
-        const thread = myThread ? myThread : await openai.beta.threads.create();
-        console.log("🚀 ~ defineEventHandler ~ thread:", thread)        
+        const thread = myThread ? myThread : await openai.beta.threads.create();     
         
-        const message = await openai.beta.threads.messages.create(thread.id, {
+        await openai.beta.threads.messages.create(thread.id, {
             role: "user",
             content: msg,
         });
@@ -28,6 +27,7 @@ export default defineEventHandler(async (event) => {
             const messages = await openai.beta.threads.messages.list(
                 run.thread_id
             );
+            console.log("🚀 ~ defineEventHandler ~ messages:", messages)
             return { success: true, resp: messages, status: "completed" };
         } else {
             console.log(run.status);

@@ -9,7 +9,7 @@ export class MessageAdapter {
         return {
             id: apiMessage.id,
             role: apiMessage.role as Role,
-            msg:{ type: apiMessage.content[0].type as MsgType, value: apiMessage.content[0].text.value }
+            msg:{ type: apiMessage.content[0].type as MsgType, value: apiMessage.content[0].text.value },
         }
     }
 }
