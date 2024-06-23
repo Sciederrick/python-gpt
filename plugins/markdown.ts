@@ -9,7 +9,7 @@ export default defineNuxtPlugin(() => {
             if (lang && hljs.getLanguage(lang)) {
                 try {
                     return (
-                        '<pre class="bg-gray-800 text-white px-3 py-2 rounded-lg my-2"><code class="hljs">' +
+                        '<pre class="bg-gray-800 text-white px-3 py-2 rounded-lg my-2 overflow-x-scroll"><code class="hljs">' +
                         hljs.highlight(str, {
                             language: lang,
                             ignoreIllegals: true,
@@ -20,7 +20,7 @@ export default defineNuxtPlugin(() => {
             }
 
             return (
-                '<pre class="bg-gray-800 text-white px-3 py-2 rounded-lg my-2"><code class="hljs">' +
+                '<pre class="bg-gray-800 text-white px-3 py-2 rounded-lg my-2 overflow-x-scroll"><code class="hljs">' +
                 md.utils.escapeHtml(str) +
                 "</code></pre>"
             );
