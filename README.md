@@ -1,6 +1,7 @@
-# Nuxt 3 Minimal Starter
+# Python-GPT
+[![screenshot](banner.png)](demo.mp4)
+A specialized GPT-like application for Python questions using Openai Assistant with code interpreter and file search tool to increase accuracy of the responses.
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
 
