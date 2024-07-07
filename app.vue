@@ -97,18 +97,19 @@ const askChatGpt = async (question) => {
     nextTick(() => { // run after the DOM has been updated
       scrollToBottom();
     })
-    loading.value = false;
     error.value = !success;
     errorMsg.value = status;
   } catch(err) {
     console.log("🚀 ~ askChatGpt ~ err:", err);    
-    loading.value = false;
     error.value = true;
     errorMsg.value = err.message ?? "something went wrong";
     setTimeout(() => {
       error.value = false;
       errorMsg.value = "";
     }, 6000);
+  } finally {
+    loading.value = false;
+    userInput.value = '';
   }
 };
 

@@ -9,7 +9,7 @@ export default defineNuxtConfig({
         },
     },
     modules: ["nuxt-icon"],
-    runtimeConfig: {
+    runtimeConfig: {        
         privateRuntimeConfig: {
             apiKey: process.env.API_KEY,
         },
